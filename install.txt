@@ -1,0 +1,6 @@
+pip3 install selenium
+pip3 install webdriver-manager
+pip3 install openpyxl
+pip3 install pyautogui
+pip3 install schedule
+pip3 install pyperclip
