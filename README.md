@@ -1,25 +1,37 @@
-# WebScraping_to_CSV
+```markdown
+# Web Scraping Bot for Tech Product Prices
 
-A demanda
+## Project Description
+This project is a web scraping bot that scrapes data from technology websites that sell tech products. Specifically, it scrapes price data of products and stores them in an Excel spreadsheet. Predefined formulas in the spreadsheet are used to calculate the profit margin.
 
-1 - Preciso de uma automação para fazer a cotação em 2 sites na internet
-- kabum
-- https://www.studiopc.com.br
-“memória ram 16gb"
+## Installation
+To install the necessary dependencies, run the following command:
+```bash
+pip3 install -r requirements.txt
+```
+The specific versions of the dependencies are listed in the requirements.txt file.
 
-2 - Depois disso jogar em uma planilha de excel e calcular a margem(lucro)
+## Prerequisites
+The user needs to have a WhatsApp account for the messaging bot to function. The user should select the group where the bot will send messages. Please note that using APIs to access WhatsApp is not recommended as it can lead to account bans.
 
-3 - enviar em um grupo do whatsapp
+## Configuration
+Before running the bot, the user needs to ensure that the correct XPaths are used in the code to locate the elements on the web pages. The XPaths are used in the Selenium WebDriver to interact with the elements on the web pages.
 
-4 - todos os dias as 06:00 da manhã
+## Execution
+To run the bot, simply execute the main Python script. The bot will start scraping the websites and send the scraped data to the specified WhatsApp group.
 
-source /Users/joaohenriquemelodesouza/Desktop/WebScraping_to_CSV/joao/bin/activate
+## Troubleshooting
+Common errors that may occur during the execution of the bot are related to XPaths. If the bot fails to locate an element on a web page, check the XPath used to locate that element. The structure of web pages can change over time, so the XPaths may need to be updated.
 
-criando planilhas por openpyxl
-e executando os calculos para margem de lucro exportanto para um arquivo .txt
+## License
+This project is not currently under any license.
 
-e atraves do pyautogui pois API do whatsapp pode ocorrer banimento
-e o pyautogui evita isso
-enviando para o cliente
-uma ferramenta de automatizao de teclado e mouse
+## Author
+👤 Joao Melo
 
+- Github: [@johnmelodev](https://github.com/johnmelodev)
+- LinkedIn: [@joao-melo-dev](https://www.linkedin.com/in/joao-melo-dev)
+
+## Show Your Support
+Give a ⭐️ if this project helped you!
+```

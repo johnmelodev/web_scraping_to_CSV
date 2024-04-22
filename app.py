@@ -1,7 +1,7 @@
-# 1 - Preciso de uma automação para fazer a cotação em 2 sites na internet
-# - kabum
+# 1 - quotation on internet websites
+# - https://www.kabum.com.br
 # - https://www.studiopc.com.br
-# “memória ram 16gb"
+# “16gb ram memory”"
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from webdriver_manager.chrome import ChromeDriverManager
@@ -71,7 +71,7 @@ def run_bot_main():
         return ram_memory_price_1, ram_memory_price_2
 
     def generate_profit_margin_spreadsheet():
-        # 2 - Depois disso jogar em uma planilha de excel e calcular a margem(lucro)
+        # 2 - After that, put it in an excel spreadsheet and calculate the margin (profit)
         ram_memory_1, ram_memory_2 = get_price()
 
         cost = 200
@@ -103,7 +103,7 @@ def run_bot_main():
         return margin_of_profit
 
     def sent_profit_margin_to_whatsapp():
-        # 3 - enviar em um grupo do whatsapp
+        # 3 - send in a whatsapp group
         margin_of_profit = generate_profit_margin_spreadsheet()
 
         pyautogui.keyDown('command')
@@ -134,7 +134,7 @@ def run_bot_main():
     sent_profit_margin_to_whatsapp()
 
 
-# 4 - todos os dias as 06:00 da manhã
+# 4 - every day at 06:00 in the morning
 
 schedule.every().day.at("18:40").do(run_bot_main)
 run_bot_main()
