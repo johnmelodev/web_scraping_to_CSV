@@ -23,9 +23,6 @@ To run the bot, simply execute the main Python script. The bot will start scrapi
 ## Troubleshooting
 Common errors that may occur during the execution of the bot are related to XPaths. If the bot fails to locate an element on a web page, check the XPath used to locate that element. The structure of web pages can change over time, so the XPaths may need to be updated.
 
-## License
-This project is not currently under any license.
-
 ## Author
 👤 Joao Melo
 
